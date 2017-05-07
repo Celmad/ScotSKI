@@ -1,5 +1,5 @@
 # ScotSKI
-Student unit website First Year
+Student unit website First Year: http://webdev.edinburghcollege.ac.uk/~HNDMALAMINOS/ScotSKI/
 
 ScotSKI is the first website that we had to do individually for the HND Web Development Year 1 (First semester).
 
