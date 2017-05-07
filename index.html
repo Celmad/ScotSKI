@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>ScotSKI</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://use.fontawesome.com/cf15c75dbb.js"></script>
+
+</head>
+<body>
+	<header class="nav-down">
+		<h1><a href="#home">ScotSKI</a></h1>
+		<nav>
+			<ul>
+				<li class="active"><a href="#home"><i class="fa fa-home" aria-hidden="true"></i><span> Home</span></a></li>
+				<li><a href='#activities'><i class="fa fa-snowflake-o" aria-hidden="true"></i><span> Activities</span></a></li>
+				<li><a href='#news'><i class="fa fa-newspaper-o" aria-hidden="true"></i><span> News</span></a></li>
+				<li><a href='#locations'><i class="fa fa-map-marker" aria-hidden="true"></i><span> Locations</span></a></li>
+				<li><a href='#contact'><i class="fa fa-envelope" aria-hidden="true"></i><span> Contact</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main id="home">
+		<h2><span>SCOT</span>SKI</h2>
+		<h3>Your wee Scottish holidays await</h3>
+		<p>Learn . Fun . Relax . Nature</p>
+		<section>
+			<a class="button" href="#activities"><i class="fa fa-chevron-down" aria-hidden="true"></i> Learn More</a>
+			<a class="button" href="#contact">Contact Us <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+		</section>
+	</main> <!-- End Main -->
+	<div class='activities' id="activities">
+		<h4>Activities</h4>
+		<section>
+			<figure>
+				<a href="activities.html#novice"><img src='img/novice.jpg' alt='novice photo'/></a>
+				<figcaption>
+					<h5>Novice<br>Lessons</h5>
+				</figcaption>	
+			</figure>
+			<figure>
+				<a href="activities.html#coaching"><img src='img/Intermediate.jpg' alt='intermediate coaching photo'/></a>
+				<figcaption>
+					<h5>Further<br>Coaching</h5>
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="activities.html#group"><img src='img/group.jpg' alt='group photo'/></a>
+				<figcaption>
+					<h5>Group<br>Sessions</h5>
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="activities.html#touring"><img src='img/touring.jpg' alt='touring photo'/></a>
+				<figcaption>
+					<h5>Ski<br>Touring</h5>
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="activities.html#equipment"><img src='img/equipment.jpg' alt='equipment photo'/></a>
+				<figcaption>
+					<h5>Equipment</h5>
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="activities.html#cafe"><img src='img/cafe.jpg' alt='cafe photo'/></a>
+				<figcaption>
+					<h5>Cafe-Chillout<br>Zone</h5>
+				</figcaption>
+			</figure>
+		</section>	
+	</div> <!-- End Activities-->
+	<div class="news" id="news">
+		<h4>News</h4>
+		<section>
+			<article>
+				<h5>Facebook</h5>
+				<iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSkiScotland%2F&tabs=timeline&width=450&height=450&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="450" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</article>
+			<article>
+				<h5>Twitter</h5>
+				<a class="twitter-timeline"  href="https://twitter.com/hashtag/skiscotland" data-widget-id="778269956752412676">Tweets of #skiscotland</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</article>
+		</section>
+	</div> <!-- End News -->
+	<div class="location" id="locations">
+		<h4>Locations</h4>
+		<section class="flex-section">
+			<section class="locations">
+				<ul>
+					<li>Glencoe</li>
+					<li>Glenshee</li>
+					<li>Cairngorm</li>
+					<li>Nevis Range</li>
+					<li>The Lecht</li>
+				</ul>
+			</section>
+			<section class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d329955.3852512758!2d-3.68614147584123!3d57.09186512870904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4885f16d5a13bd13%3A0x1d0c681aff302210!2sCairngorms!5e0!3m2!1sen!2suk!4v1474541149729" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</section>
+		</section>
+	</div> <!-- End Locations -->
+	<div class="contact" id="contact">
+		<h4>Contact Us</h4>
+		<form action="/my-handling-form-page" method="post">
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="user_name" />
+			</div>
+			<div>
+				<label for="mail">E-mail:</label>
+				<input type="email" id="mail" name="user_mail" />
+			</div>
+			<div>
+				<label for="msg">Message:</label>
+				<textarea id="msg" name="user_message"></textarea>
+			</div>
+			<div class="button">
+        		<button type="submit">Submit</button>
+    		</div>
+		</form>
+	</div>
+	<footer>
+		<section>
+			<ul class="links">
+				<li><a href="about.html#about">About us</a></li>
+				<li><a href="about.html#vacancies">Vacancies</a></li>
+				<li><a href="about.html#legal">Legal</a></li>
+			</ul>
+		</section>
+		<section class="social">
+			<a href="https://en-gb.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+			<a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+		</section>
+		<section class="copyright">
+			<p>&copy; 2016 ScotSKI</p>
+		</section>	
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
+

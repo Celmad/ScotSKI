@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy|Karla|Orbitron');
+
+/* Reset */
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 62.5%;
+	font: inherit;
+}
+/* Global */
+html, body, main {
+	font-family: 'Karla', Helvetica, sans-serif;
+	color: #333;
+    height: 100%;
+}
+ul, ol {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	position: relative;
+}
+p, li, a {
+	font-size: 1.1em;
+}
+h4 {
+	position: relative;
+	font-size: 3.5em;
+	text-align: center;
+	margin: 40px 0;
+	padding-top: 40px;
+}
+h5 {
+	margin: 10px;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* Header */
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0;
+	box-shadow: 0 8px 6px -6px #999;
+    z-index: 2;
+    width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	transition: top 0.2s ease-in-out;
+}
+.nav-up {
+    top: -100px;
+}
+header h1 {
+	font-size: 2.5em;
+    font-family: 'Chewy', cursive;
+	font-weight: 900;
+    color: #2e9fff;
+}
+header nav {
+	flex-basis: 40%;
+	text-transform: uppercase;	
+}
+nav ul {
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-around;
+}
+nav ul li a {
+	padding-bottom: 3px;
+	border-bottom: 1px solid #fff;
+	transition: all .3s;
+}
+nav ul .active > a {
+	color: #2e9fff;
+	border-bottom: 1px solid #2e9fff;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #2e9fff;
+	border-bottom: 1px solid #2e9fff;
+}
+
+/* Main */
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+    background: url("../img/main.jpg") no-repeat center center;
+    background-size: cover;
+	filter: opacity(70%);
+    width: 100%;
+    color: #fff;
+	font-weight: bold;
+}
+main h2 {
+	font-size: 12em;
+    filter: drop-shadow(5px 5px 10px #333);
+}
+main h2 span {
+	color: #2e9fff;
+}
+main h3 {
+    font-size: 3em;
+    filter: drop-shadow(5px 5px 10px #333);   
+}
+main p {
+	font-size: 2em;
+    filter: drop-shadow(5px 5px 10px #333);   
+}
+main section {
+	display: flex;
+	flex-direction: row;
+}
+main .button {
+	font-size: 1em;
+	color: #333;
+	padding: 10px 30px;
+	margin: 20px 10px;
+	color: #fff;
+	background: transparent;
+	border: 2px solid #fff;
+	transition: .25s;
+}
+main .button:hover,
+main .button:focus {
+	color: #2e9fff;
+	background-color: #fff;
+}
+
+/* Activities */
+.activities section {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin: 0 50px;
+	height: 100%;
+}
+.activities figure {
+	flex: 1 1 30em;
+	margin: -1em 1em;
+	transition: .25s;
+}
+.activities figure img {
+	display: block;
+	width: 100%;
+	filter: opacity(70%);
+	transition: .25s;
+}
+.activities figure img:hover,
+.activities figure img:focus {
+	filter: opacity(100%);
+	box-shadow: 5px 5px 5px #2C3E50;
+	transform: scale(1.05);
+}
+.activities h5 {
+	font-family: "Chewy";
+	color: #fff;
+	position: relative;
+	font-size: 3.5em;
+	font-weight: 900;
+	line-height: 50px;
+	top: -250px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	filter: drop-shadow(5px 5px 10px #333);
+	pointer-events: none;
+}
+
+
+/* News */
+.news {
+	background-color: #2e9fff;
+	color: #fff;
+	padding-bottom: 50px;
+}
+.news section {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+/* Locations */
+.flex-section {
+	display: flex;
+	justify-content: space-around;
+}
+.locations {
+	width: 20%;
+	height: 400px;
+}
+.locations ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-left: 50px;
+	height: 100%;
+	border-left: 1px solid #2e9fff;
+}
+.location ul li {
+	font-size: 1.5em;
+	padding: 0 20px;
+}
+.map {
+	width: 80%;
+	height: 400px;
+	margin-right: 50px;
+}
+
+/* Contact */
+.contact h4 {
+	color: #fff;
+}
+.contact {
+	background-color: #2e9fff ;
+	padding-bottom: 50px;
+}
+
+/* Form */
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    /* To see the outline of the form */
+    padding: 2em;
+    border: 1px solid #fff;
+	background-color: #fff;
+	color: #333;
+}
+form div + div {
+    margin-top: 1em;
+}
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1.5em sans-serif;
+
+    /* To give the same size to all text field */
+    width: 400px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #333;
+	
+	padding: 6px;
+}
+input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #2e9fff;
+}
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 5em;
+
+    /* To allow users to resize any textarea vertically
+       It does not work on all browsers */
+    resize: vertical;
+}
+.contact .button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+}
+.contact button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .25em;
+	background-color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #333;
+	color: #333;
+	transition: .25s;
+}
+.contact button:hover,
+.contact button:focus {
+	border: 1px solid #2e9fff;
+	color: #2e9fff;
+	cursor: pointer;
+}
+
+/* Footer */
+footer {
+	display: flex;
+	justify-content: space-around;
+	color: #fff;
+	background-color: #333;
+	padding: 40px;
+}	
+footer a:hover,
+footer a:focus {
+	color: #2e9fff;
+	transition: .25s;
+}
+footer .links li {
+	padding: 5px 0;
+	font-size: .85em;
+}
+footer .social a .fa {
+	font-size: 1.5em;
+}
+footer .social a {
+	margin: 0 10px;
+}
+footer .copyright {
+	font-size: .85em;
+}
+
+/* Activities and About Page */
+.activities_page {
+	padding: 10% 30%;
+}
+.activities_page h2, .about_page h2 {
+	font-size: 1.5em;
+	border-bottom: 1px solid #2e9fff;
+}
+.activities_page p, .about_page h2 {
+	margin: 30px 0;
+}
+.about_page {
+	padding: 10% 30%;
+}
+
+/* Media Q */
+@media all and (max-width: 1250px) {
+	header nav {
+		flex-basis: 60%;
+	}
+	header nav ul li {
+		margin: 1px;
+	}
+}
+@media all and (max-width: 850px) {
+  nav span {
+	  display: none;
+  }
+
+  main h2 {
+	  font-size: 8em;
+  }
+  main h3 {
+      font-size: 2em;
+  }
+  main p {
+	  font-size: 1.5em;
+  }
+
+  .locations {
+	  width: 100%;
+	  height: 100%;
+  }
+  .flex-section {
+	  flex-direction: column;
+  }
+  .locations ul {
+	  flex-direction: row;
+	  justify-content: space-around;
+	  border-right: 1px solid #2e9fff;
+	  margin: 5px;
+  }
+  .map {
+	  width: 100%;
+  }
+
+  .activities_page {
+	margin: 20% 20%;
+  }
+}
+
+@media all and (max-width: 600px) {
+	main h2 {
+		font-size: 4.5em;
+	}
+	main h3 {
+		font-size: 1.2em;
+	}
+	main p {
+		font-size: 1em;
+	}
+
+	.activities_page {
+	margin: 30% 10%;
+}
+
+
+@media all and (max-width: 500px) {
+	activities h5 {
+		font-size: 1.5em;
+	}
+
+	.activities_page {
+	margin: 30% 10%;
+	}  
+}}
